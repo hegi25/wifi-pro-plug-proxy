@@ -1,0 +1,16 @@
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  - host: inverter.cluster.local
+    http:
+      paths:
+      - path: /
+        pathType: ImplementationSpecific
+        backend:
+          service:
+            name: production-auto-deploy
+            port:
+              number: 5000
+

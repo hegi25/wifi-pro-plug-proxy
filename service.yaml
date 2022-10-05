@@ -1,0 +1,10 @@
+spec:
+  ports:
+  - port: 5000
+    targetPort: 5000
+    protocol: TCP
+    name: web
+  - port: 502
+    targetPort: 502
+    protocol: TCP
+    name: inverter

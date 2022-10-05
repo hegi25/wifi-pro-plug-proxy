@@ -1,0 +1,6 @@
+version: "3.3"
+services:
+  proxy:
+    build: .
+    ports:
+      - "502:502"
